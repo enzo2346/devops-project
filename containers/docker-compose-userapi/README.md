@@ -1,6 +1,6 @@
 # Container orchestration using Docker Compose
 
-It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) app running inside a docker container and link a [Redis](https://redis.io/) container.
+It is our [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) app running inside a docker container and link a [Redis](https://redis.io/) container.
 
 ## Functionality
 
@@ -17,7 +17,7 @@ To be able to launch this container you must have install
 
 To install and run the containers do the following steps:
 
-1. Clone this repository and navigate to the [docker-compose-userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/containers/docker-compose-userapi) folder in your terminal.
+1. Clone this repository and navigate to the [docker-compose-userapi](https://github.com/enzo2346/devops-project/tree/main/containers/docker-compose-userapi) folder in your terminal.
 
 2. Run the command!
 

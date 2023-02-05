@@ -1,6 +1,6 @@
 # Service mech using istio
 
-It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) app running in a service mech using [Istio](https://istio.io/latest/) and [Minikube](https://kubernetes.io/fr/docs/setup/learning-environment/minikube/).
+It is our [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) app running in a service mech using [Istio](https://istio.io/latest/) and [Minikube](https://kubernetes.io/fr/docs/setup/learning-environment/minikube/).
 
 ## Functionality
 
@@ -37,7 +37,7 @@ minikube tunnel
 
 https://istio.io/docs/setup/getting-started/
 
-6. Clone this repository and navigate to the [Istio](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/istio) folder in your terminal.
+6. Clone this repository and navigate to the [Istio](https://github.com/enzo2346/devops-project/tree/main/istio) folder in your terminal.
 
 ## Installation and run
 

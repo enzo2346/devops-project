@@ -1,6 +1,6 @@
 # Container with Docker
 
-It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) app running inside a docker container and link to the host [Redis database](https://redis.io/).
+It is our [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) app running inside a docker container and link to the host [Redis database](https://redis.io/).
 
 ## Functionality
 
@@ -27,7 +27,7 @@ Then to install the docker image you can follow one of the two way below:
 
 ### Using local Docker image
 
-1. Clone this repository and navigate to the [docker-userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/containers/docker-userapi) folder in your terminal.
+1. Clone this repository and navigate to the [docker-userapi](https://github.com/enzo2346/devops-project/tree/main/containers/docker-userapi) folder in your terminal.
 
 2. Run the command below to create the docker image:
 

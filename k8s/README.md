@@ -1,6 +1,6 @@
 # Container orchestration using Kubernetes
 
-It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) app running in a container inside a kubernetes cluster with a [Redis](https://redis.io/) container.
+It is our [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) app running in a container inside a kubernetes cluster with a [Redis](https://redis.io/) container.
 
 ## Functionality
 
@@ -27,7 +27,7 @@ minikube start --driver=<>
 minikube status
 ```
 
-4. Clone this repository and navigate to the [k8s](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/k8s) folder in your terminal.
+4. Clone this repository and navigate to the [k8s](https://github.com/enzo2346/devops-project/tree/main/k8s) folder in your terminal.
 
 ## Installation and run
 

@@ -1,6 +1,6 @@
 # User API web application
 
-It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) app link to a [Redis database](https://redis.io/) and monitored with [prometheus](https://prometheus.io/) and [grafana](https://grafana.com/) containers.
+It is our [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) app link to a [Redis database](https://redis.io/) and monitored with [prometheus](https://prometheus.io/) and [grafana](https://grafana.com/) containers.
 
 ## Functionality
 
@@ -17,7 +17,7 @@ It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/mai
 
 4. Install application:
 
-Clone this repository, then go to [monitoring](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/monitoring) and run:
+Clone this repository, then go to [monitoring](https://github.com/enzo2346/devops-project/tree/main/monitoring) and run:
 
 ```
 npm install
@@ -47,7 +47,7 @@ It will start a web server available in your browser at http://localhost:3000.
 
 4. Start Prometheus container:
 
-- In a third terminal, go to [monitoring/src](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/monitoring/src) directory and run:
+- In a third terminal, go to [monitoring/src](https://github.com/enzo2346/devops-project/tree/main/monitoring/src) directory and run:
 
 ```bash
 docker run --rm -p 9090:9090 \
@@ -59,7 +59,7 @@ It will start a Prometheus container available in your browser at http://localho
 
 5. Start Grafana container:
 
-- In a fourth terminal, go to [monitoring/src](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/monitoring/src) directory and run:
+- In a fourth terminal, go to [monitoring/src](https://github.com/enzo2346/devops-project/tree/main/monitoring/src) directory and run:
 
 ```bash
 docker run --rm -p 3001:3000 \
@@ -78,7 +78,7 @@ It will start a Grafana container available in your browser at http://localhost:
 
 - Click on "+" button on the left panel and select "Import"
 
-- select "Upload .json file" and upload [monitoring/src/grafana-dashboard.json](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/monitoring/src/grafana-dashboard.json) file
+- select "Upload .json file" and upload [monitoring/src/grafana-dashboard.json](https://github.com/enzo2346/devops-project/tree/main/monitoring/src/grafana-dashboard.json) file
 
 Then you can see the dashboard.
 

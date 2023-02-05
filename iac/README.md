@@ -1,6 +1,6 @@
 # Infrastructure as Code with Vagrant
 
-It is our [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) app running inside a [Ubuntu 22.04.1 LTS (Jammy Jellyfish)](https://releases.ubuntu.com/22.04/) virtual machine with it [Redis database](https://redis.io/).
+It is our [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) app running inside a [Ubuntu 22.04.1 LTS (Jammy Jellyfish)](https://releases.ubuntu.com/22.04/) virtual machine with it [Redis database](https://redis.io/).
 
 ## Functionality
 
@@ -29,7 +29,7 @@ To be able to launch this VM you must have done the following steps
 
 To create, configure and then start the VM follow the instructions below
 
-1. Clone this repository and navigate to the [iac](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/iac) folder in your terminal.
+1. Clone this repository and navigate to the [iac](https://github.com/enzo2346/devops-project/tree/main/iac) folder in your terminal.
 
 2. Run the command:
    
@@ -76,7 +76,7 @@ Another way to test your REST API is to use [Postman](https://www.postman.com/).
 
 To run a health check of your application inside a vm, do the following steps:
 
-1. navigate to the [iac](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/iac) folder in your terminal.
+1. navigate to the [iac](https://github.com/enzo2346/devops-project/tree/main/iac) folder in your terminal.
 
 2. Run the command:
 

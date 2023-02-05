@@ -1,4 +1,4 @@
-# ece-devops-BRICE-GALLOS
+# devops-project
 
 This is our repository for both the labs and project
 
@@ -64,20 +64,20 @@ We did that after lab3 because we understood that we will lose a lot of time by 
 
 ## Screenshots
 
-Screenshots of all the different way of running the web application are provided in the [screenshots](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/screenshots) folder
+Screenshots of all the different way of running the web application are provided in the [screenshots](https://github.com/enzo2346/devops-project/tree/main/screenshots) folder
 
 ## Instructions
 
 Instructions to install, use and test the web application are available in the README.md of the following folder :
-  - [userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/userapi) for just the web application
-  - [.github/workflows](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/.github/workflows) for CI-CD integration
-  - [iac](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/iac) for Infrastructure as Code with Vagrant and Ansible
-  - [containers/docker-userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/containers/docker-userapi) for Docker
-  - [containers/docker-compose-userapi](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/containers/docker-compose-userapi) for Docker-compose
-  - [k8s](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/k8s) for Kubernetes with Minikube
-  - [istio](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/istio) for Istio with Minikube
-  - [monitoring](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/monitoring) for monitoring with prometheus and grafana
-  - [labs](https://github.com/enzo2346/ece-devops-BRICE-GALLOS/tree/main/labs) for the labs done before the project
+  - [userapi](https://github.com/enzo2346/devops-project/tree/main/userapi) for just the web application
+  - [.github/workflows](https://github.com/enzo2346/devops-project/tree/main/.github/workflows) for CI-CD integration
+  - [iac](https://github.com/enzo2346/devops-project/tree/main/iac) for Infrastructure as Code with Vagrant and Ansible
+  - [containers/docker-userapi](https://github.com/enzo2346/devops-project/tree/main/containers/docker-userapi) for Docker
+  - [containers/docker-compose-userapi](https://github.com/enzo2346/devops-project/tree/main/containers/docker-compose-userapi) for Docker-compose
+  - [k8s](https://github.com/enzo2346/devops-project/tree/main/k8s) for Kubernetes with Minikube
+  - [istio](https://github.com/enzo2346/devops-project/tree/main/istio) for Istio with Minikube
+  - [monitoring](https://github.com/enzo2346/devops-project/tree/main/monitoring) for monitoring with prometheus and grafana
+  - [labs](https://github.com/enzo2346/devops-project/tree/main/labs) for the labs done before the project
 
 ## Platforms and tools used
 
