@@ -1,0 +1,114 @@
+##################################################################################################
+# Redis service
+##################################################################################################
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  labels:
+    app: redis
+    service: redis-service
+spec:
+  ports:
+    - name: http
+      port: 6379
+      targetPort: 6379
+  selector:
+    app: redis
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redis-deployment
+  labels:
+    app: redis
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redis
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: redis
+        version: v1
+    spec:
+      containers:
+        - name: redis
+          image: redis
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 6379
+##################################################################################################
+# Userapi service
+##################################################################################################
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: userapi-service
+  labels:
+    app: userapi
+    service: userapi-service
+spec:
+  type: NodePort
+  selector:
+    app: userapi
+  ports:
+    - name: http
+      port: 3000
+      targetPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userapi-deployment-v1
+  labels:
+    app: userapi
+    version: v1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: userapi
+      version: v1
+  template:
+    metadata:
+      labels:
+        app: userapi
+        version: v1
+    spec:
+      containers:
+        - name: userapi
+          image: enzo2346/userapi-k8s-v1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: userapi-deployment-v2
+  labels:
+    app: userapi
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: userapi
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: userapi
+        version: v2
+    spec:
+      containers:
+        - name: userapi
+          image: enzo2346/userapi-k8s-v2
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000

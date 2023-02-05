@@ -1,0 +1,28 @@
+---
+# OPTIONAL TASKS (needed to run checks from the host machine)
+# - name: Uncomment the GitLab IP whitelist line
+#   replace:
+#     path: /etc/gitlab/gitlab.rb
+#     regexp: '^# (gitlab_rails\[''monitoring_whitelist''\] = \[.*)\]$'
+#     replace: '\1, ''20.20.20.1'']'
+
+# - name: Reconfigure GitLab
+#   command: gitlab-ctl reconfigure
+
+# - name: Restart unicorn
+#   command: gitlab-ctl restart unicorn
+#   retries: 2
+# END OF OPTIONAL TASKS
+
+# Check if redis is running
+- name: Check if redis is running
+  shell: redis-cli ping
+  register: redis_ping
+  failed_when: redis_ping.stdout != "PONG"
+  changed_when: false
+
+# check if userapi is running
+- name: Check if userapi is running
+  shell: cd /home/vagrant/userapi && npm run stop && npm run test && npm start &
+  register: userapi_test
+  failed_when: "'Error' in userapi_test.stdout"

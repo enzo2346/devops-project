@@ -1,0 +1,15 @@
+# install redis with apt
+- name: Install redis
+  apt:
+    name: redis-server
+    state: latest
+
+# install node and npm with apt
+- name: Install node and npm
+  apt:
+    name: ["nodejs", "npm"]
+    state: latest
+
+# run userapi
+- name: Run userapi
+  shell: cd /home/vagrant/userapi && npm install && npm start &
